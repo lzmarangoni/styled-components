@@ -2,6 +2,7 @@ import React from "react";
 import bank_logo from "../../assets/images/bank_logo.svg";
 import styled from "styled-components";
 import { corPrimaria } from "../../assets/UI/estilosPadrao";
+import { Logo } from "../../assets/UI";
 
 const Header = styled.nav`
   background-color: ${corPrimaria};
@@ -26,7 +27,7 @@ color:${(props)=> props.primario ? corPrimaria : "white"};
 const Cabecalho = () => {
   return (
     <Header>
-      <img className="imagem-logo" src={bank_logo} alt="Logo Smart Bank" />
+      <Logo src={bank_logo} alt="Logo Smart Bank"/>
       <div>
         <BtnHeader primario href="https://google.com">
           Ajuda

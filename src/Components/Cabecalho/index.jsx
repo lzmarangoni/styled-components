@@ -11,6 +11,16 @@ const Header = styled.nav`
   height: 10vh;
   align-items: center;
 `
+const BtnHeader = styled.a`
+text-align: center;
+border-radius: 3px;
+padding: 5px 20px;
+margin: 0 10px;
+font-weight: 600;
+border: 2px solid white;
+background:${(props) => props.primario ? "white" : corPrimaria};
+color:${(props)=> props.primario ? corPrimaria : "white"};
+`
 
 
 const Cabecalho = () => {
@@ -18,12 +28,12 @@ const Cabecalho = () => {
     <Header>
       <img className="imagem-logo" src={bank_logo} alt="Logo Smart Bank" />
       <div>
-        <a className="btn-secundario" href="https://google.com">
+        <BtnHeader primario href="https://google.com">
           Ajuda
-        </a>
-        <a className="btn-primario" href="https://google.com">
+        </BtnHeader>
+        <BtnHeader href="https://google.com">
           Sair
-        </a>
+        </BtnHeader>
       </div>
     </Header>
   );

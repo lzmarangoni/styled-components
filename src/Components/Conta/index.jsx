@@ -7,7 +7,7 @@ import { Box, Button, Detalhe, Icone, Saldo } from "../../assets/UI";
 
 const IconeMargin = styled(Icone)`
   margin-top: 2px;
-
+  
 `
 
 

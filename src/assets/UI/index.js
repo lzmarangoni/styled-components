@@ -8,7 +8,12 @@ export const Logo = styled.img`
 export const Icone = styled.img`
     height: 25px;
     width: 25px;
+
 `
+export const IconeTema = styled(Icone)`
+    filter: ${({theme})=> theme.filter}
+`
+
 export const Box = styled.div`
     display: flex;
     flex-direction: column;
@@ -43,4 +48,12 @@ export const Saldo = styled.div`
 export const Detalhe = styled.span`
     color: #41d3be;
     font-size: 24px;
+`
+export const BtnTema = styled.button`
+        position: absolute;
+        top: 4vh;
+        right: 20px;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
 `

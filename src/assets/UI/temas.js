@@ -3,11 +3,13 @@ import { conteudoClaro, conteudoEscuro, fundoClaro, fundoEscuro, textoFundoClaro
 export const temaClaro = {
     body: fundoClaro,
     conteudo: conteudoClaro,
-    text: textoFundoClaro
+    text: textoFundoClaro,
+    filter:''
 }
 
 export const temaEscuro = {
     body: fundoEscuro,
     conteudo: conteudoEscuro,
-    text: textoFundoEscuro
+    text: textoFundoEscuro,
+    filter: "invert(100%)"
 }
